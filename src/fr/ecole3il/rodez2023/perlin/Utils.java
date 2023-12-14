@@ -65,10 +65,11 @@ public class Utils {
      * @author philibert roquart, fainéant
      */
     public static double min(int width, int height) {
-    	// pas le temps, j'ai mes exos de chimie à finir
-    	return 1;
+    	// compare les deux valeurs numeriques 
+    	return Math.min(width, height);
     }
 
+    
     /**
      * Lit le contenu d'un fichier texte et le retourne sous forme de chaîne de caractères.
      * @param cheminFichier Le chemin vers le fichier à lire.
