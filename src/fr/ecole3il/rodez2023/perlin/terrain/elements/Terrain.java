@@ -13,7 +13,7 @@ public class Terrain {
 			(hydrometrie < 0 || hydrometrie > 1) || 
 			(temperature < 0 || temperature > 1))
 		{
-			throw new MauvaiseValeurException();
+			throw new MauvaiseValeurException("la valeur n'existe pas");
 			
 		}
 		
@@ -28,7 +28,7 @@ public class Terrain {
 		
 	}
 	
-	public double getTemperarure() {
+	public double getTemperature() {
 		return temperature;
 		
 	}
@@ -38,7 +38,7 @@ public class Terrain {
 		
 	}
 	
-	public typeTerrain getTypeTerrain (DetermineurTerrain determineur){
+	public TypeTerrain getTypeTerrain (DetermineurTerrain determineur){
 		return determineur.determinerTerrain(this.altitude, this.hydrometrie, this.temperature);
 		
 	}

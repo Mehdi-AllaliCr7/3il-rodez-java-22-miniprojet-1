@@ -1,11 +1,11 @@
 package fr.ecole3il.rodez2023.perlin.terrain.visualisation;
 
 
-import fr.ecole3il.rodez2023.perlin.terrain.elements.typeTerrain;
+import fr.ecole3il.rodez2023.perlin.terrain.elements.TypeTerrain;
 
 public interface DetermineurTerrain {
 
-	public typeTerrain determinerTerrain(double altitude, double hydrometrie, double temperature);
+	public TypeTerrain determinerTerrain(double altitude, double hydrometrie, double temperature);
 
 
 }

@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 
 import fr.ecole3il.rodez2023.perlin.Utils;
 
-public enum typeTerrain {
+public enum TypeTerrain {
 	CONIFEROUS_FOREST("Forêt de conifères"),
 	DECIDUOUS("Forêt de feuillus"),
 	DESERT("Désert"),
@@ -18,7 +18,7 @@ public enum typeTerrain {
 	//private typeTerrain terrain = CONIFEROUS_FOREST;
 	private String nom;
 	
-	private typeTerrain(String nom) {
+	private TypeTerrain(String nom) {
 		this.nom=nom;
 	}
 	
@@ -31,6 +31,10 @@ public enum typeTerrain {
 	@Override
 	public String toString() {
 		return nom;
+	}
+	
+	public String getTypeTerrain() {
+		
 	}
 	
 	
