@@ -9,9 +9,7 @@ public class Terrain {
 	
 	
 	public Terrain(double altitude, double hydrometrie, double temperature) {
-		if ((altitude < -1 || altitude > 1) || 
-			(hydrometrie < 0 || hydrometrie > 1) || 
-			(temperature < 0 || temperature > 1))
+		if ((altitude < -1 || altitude > 1) || (hydrometrie < 0 || hydrometrie > 1) || 	(temperature < 0 || temperature > 1))
 		{
 			throw new MauvaiseValeurException("la valeur n'existe pas");
 			
@@ -37,6 +35,7 @@ public class Terrain {
 		return hydrometrie;
 		
 	}
+	
 	
 	public TypeTerrain getTypeTerrain (DetermineurTerrain determineur){
 		return determineur.determinerTerrain(this.altitude, this.hydrometrie, this.temperature);
