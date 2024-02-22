@@ -1,9 +1,8 @@
-package fr.ecole3il.rodez2023.perlin.terrain.visualisation;
+package fr.ecole3il.rodez2023.perlin.terrain.generation;
 
 
 import fr.ecole3il.rodez2023.perlin.math.BruitPerlin2D;
 import fr.ecole3il.rodez2023.perlin.terrain.elements.Terrain;
-import fr.ecole3il.rodez2023.perlin.terrain.generation.GenerateurCarte;
 
 public class GenerateurPerlin extends GenerateurCarte{
 	

@@ -45,7 +45,6 @@ public class Carte {
     	}
     }
     
-    // Accesseurs pour le nom de la carte
     public String getNom() {
         return nom;
     }
@@ -54,7 +53,6 @@ public class Carte {
         this.nom = nom;
     }
 
-    // Accesseurs pour la largeur
     public int getLargeur() {
         return largeur;
     }
@@ -71,15 +69,15 @@ public class Carte {
     public void setHauteur(int hauteur) {
         this.hauteur = hauteur;
     }
+    
 
     // Accesseur pour un terrain à une position donnee
-    public Terrain getTerrain(int x, int y) throws TerrainInnexistantException {
-    	try {
-        return terrains[x][y];
-    	} 
-    	catch(Exception e) {
+    public Terrain getTerrain(int x, int y)  {
+    	if(x<0 || y<0 || x>= largeur || y >= hauteur) {
     		throw new TerrainInnexistantException("le terrain est innexistant");
     	}
+        return terrains[x][y];
+    	
     }
     
     

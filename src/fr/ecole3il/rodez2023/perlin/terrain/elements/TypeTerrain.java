@@ -5,15 +5,15 @@ import java.awt.image.BufferedImage;
 import fr.ecole3il.rodez2023.perlin.Utils;
 
 public enum TypeTerrain {
-	CONIFEROUS_FOREST("Forêt de conifères"),
-	DECIDUOUS("Forêt de feuillus"),
-	DESERT("Désert"),
-	HILLS("Collines"),
-	MARSH("Marais"),
-	MOUNTAIN("Montagne"),
-	OCEAN("Océan"),
-	PLAIN("Plaine"),
-	TUNDRA("Toundra");
+	FORET_CONIFÃˆRES("coniferous_forest"),
+	FORET_FEUILLUS("deciduous_forest"),
+	DESERT("desert"),
+	COLLINES("hills"),
+	MARAIS("marsh"),
+	MONTAGNE("mountain"),
+	OCEAN("ocean"),
+	PLAINE("plain"),
+	TOUNDRA("tundra");
 	
 	//private typeTerrain terrain = CONIFEROUS_FOREST;
 	private String nom;
@@ -33,9 +33,7 @@ public enum TypeTerrain {
 		return nom;
 	}
 	
-	public String getTypeTerrain() {
-		
-	}
+	
 	
 	
 
